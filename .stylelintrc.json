@@ -1,7 +1,13 @@
 {
-  "extends": ["stylelint-config-recess-order", "stylelint-config-standard"],
+  "extends": [
+    "stylelint-config-recess-order",
+    "stylelint-config-standard",
+    "stylelint-config-standard-scss",
+    "stylelint-prettier/recommended"
+  ],
   "plugins": ["stylelint-scss"],
   "rules": {
+    "prettier/prettier": true,
     "alpha-value-notation": "number",
     "at-rule-empty-line-before": null,
     "at-rule-no-unknown": null,

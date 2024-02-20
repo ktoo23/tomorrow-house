@@ -6,7 +6,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "sass": "node-sass -wr styles/main.scss style.css",
-    "lint:css": "stylelint --ignore-path .gitignore '**/*.scss'"
+    "lint:css": "stylelint '**/*.scss' --fix",
+    "format": "prettier --write '**/*.{scss,css,html,js}'"
   },
   "keywords": [],
   "author": "",
@@ -15,9 +16,12 @@
     "node-sass": "^9.0.0"
   },
   "devDependencies": {
+    "prettier": "^3.2.5",
     "stylelint": "^16.2.1",
     "stylelint-config-recess-order": "^4.6.0",
     "stylelint-config-standard": "^36.0.0",
+    "stylelint-config-standard-scss": "^13.0.0",
+    "stylelint-prettier": "^5.0.0",
     "stylelint-scss": "^6.1.0"
   }
 }
