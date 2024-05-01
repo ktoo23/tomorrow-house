@@ -2,8 +2,8 @@
   box-sizing: border-box;
   margin: 0;
   font-family: $font-main;
-  -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
 }
 
 html {
@@ -47,12 +47,12 @@ button {
   padding: 0;
 }
 
-a:hover {
-  color: #fff;
-}
-
 ul,
 ol {
   padding-left: 0;
   list-style: none;
+}
+
+address {
+  font-style: normal;
 }
