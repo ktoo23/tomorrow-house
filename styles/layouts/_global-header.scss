@@ -10,17 +10,19 @@
 
   .gnb {
     top: 0;
+    z-index: $gnb-level;
   }
 
   .lnb {
     top: $gnb-height-sm;
+    z-index: $lnb-level;
   }
 
   @include responsive(T) {
     height: $gnb-height-md + $lnb-height-md;
 
     .lnb {
-      height: $gnb-height-md;
+      top: $gnb-height-md;
     }
   }
 }
