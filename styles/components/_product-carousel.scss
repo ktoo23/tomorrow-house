@@ -19,6 +19,10 @@
     @include flexbox;
     margin: 0 4px;
 
+    &:first-child {
+      margin-left: 0;
+    }
+
     &.tns-nav-active {
       button {
         opacity: 1;
