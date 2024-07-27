@@ -13,7 +13,7 @@
 
   &-list {
     @include flexbox;
-    margin: 0 -15px;
+    margin: 0 -#{$grid-margin};
   }
 
   &-item {
