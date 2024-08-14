@@ -13,6 +13,7 @@
   padding: 20px 0;
   background-color: $white;
   border-bottom: 1px solid $border;
+
   &-header {
     @include flexbox(start);
     margin-bottom: 20px;
@@ -52,6 +53,21 @@
   &-body {
     @include text-style(13, $primary-color);
     margin-bottom: 20px;
+
+    .review-image {
+      width: 64px;
+      height: 64px;
+      margin-bottom: 8px;
+      overflow: hidden;
+      border-radius: 4px;
+
+      img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
   }
 
   &-footer {
@@ -59,13 +75,13 @@
 
     button {
       width: 120px;
-    }
 
-    .ic-check {
-      display: inline-block;
-      width: 20px;
-      height: 20px;
-      margin-right: 2px;
+      i {
+        margin-right: 4px;
+        margin-left: -4px;
+        font-size: 20px;
+        color: $white;
+      }
     }
 
     p {
@@ -96,6 +112,12 @@
 
     &-body {
       @include text-style(14);
+
+      .review-image {
+        width: 112px;
+        height: 112px;
+        margin-bottom: 16px;
+      }
     }
   }
 
