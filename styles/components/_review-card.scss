@@ -1,18 +1,6 @@
-.review-empty {
-  @include text-style(16, $secondary);
-  padding: 84px 36px;
-  text-align: center;
-  background-color: $white;
-
-  strong {
-    color: $blue;
-  }
-}
-
 .review-card {
   padding: 20px 0;
   background-color: $white;
-  border-bottom: 1px solid $border;
 
   &-header {
     @include flexbox(start);
