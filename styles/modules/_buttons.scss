@@ -37,7 +37,7 @@
   @extend %btn-base;
   color: $blue;
   background-color: $white;
-  border: $blue;
+  border: 1px solid $blue;
   transition: background-color 200ms ease-in-out;
 
   &:not(:disabled):hover {
