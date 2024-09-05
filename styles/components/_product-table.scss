@@ -3,6 +3,7 @@
   $table-th-width-sm: 100px;
   $table-th-width-md: 140px + $table-cell-padding;
 
+  width: 100%;
   table-layout: fixed;
   border-collapse: collapse;
 
@@ -10,7 +11,7 @@
     @include text-style(12, $primary-color);
     text-align: left;
     vertical-align: top;
-    border: 1px solid $border;
+    border-bottom: 1px solid $border;
   }
 
   th,
